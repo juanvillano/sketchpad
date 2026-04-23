@@ -11,8 +11,8 @@ function createDivs(count) {
 let containerWidth = container.clientWidth;
 let containerHeight = container.clientHeight;
 
-let across = containerHeight / 8;
-let down = containerWidth / 8;
+let across = containerHeight / 4;
+let down = containerWidth / 4;
 let total = across * down;
 
 console.log('height: ', containerHeight);
@@ -20,3 +20,11 @@ console.log('width: ', containerWidth);
 console.log('total: ', total);
 
 createDivs(total);
+
+const divList = document.querySelectorAll("#container > div");
+divList.forEach((div) => {
+    div.addEventListener('mouseenter', (e) => {
+        e.preventDefault();
+        div.classList.add('add-color');
+    });
+});

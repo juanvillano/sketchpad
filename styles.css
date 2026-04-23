@@ -17,12 +17,16 @@ body {
 }
 
 #container div {
-    width: 8px;
-    width: 8px;
+    width: 4px;
+    width: 4px;
     display: inline;
     box-sizing: border-box;
 }
 
-#container div:hover {
+/* #container div:hover {
     background-color: lightpink;
+} */
+
+.add-color {
+    background-color: lightblue;
 }
