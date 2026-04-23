@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: stretch;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+#container div {
+    width: 8px;
+    width: 8px;
+    display: inline;
+    box-sizing: border-box;
+}
+
+#container div:hover {
+    background-color: lightpink;
+}
