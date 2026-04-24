@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -9,16 +12,16 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: stretch;
-    width: 100dvw;
-    height: 100dvh;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
+    border: 1px solid lightblue;
+    margin-top: 2rem;
 }
 
 #container div {
-    width: 4px;
-    width: 4px;
     display: inline;
     box-sizing: border-box;
 }
