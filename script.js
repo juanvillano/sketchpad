@@ -24,7 +24,9 @@ function createDivs(count, width, height) {
     divList.forEach((div) => {
         div.addEventListener('mouseenter', (e) => {
             e.preventDefault();
-            div.classList.add('add-color');
+            //div.classList.add('add-color');
+            //div.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255) + 1} ${Math.floor(Math.random() * 255) + 1} ${Math.floor(Math.random() * 255) + 1})`
+            div.style.backgroundColor = `hsl(${Math.floor(Math.random() * 360) + 1} 100% ${Math.floor(Math.random() * 100) + 1}%)`
         });
     });
 }
